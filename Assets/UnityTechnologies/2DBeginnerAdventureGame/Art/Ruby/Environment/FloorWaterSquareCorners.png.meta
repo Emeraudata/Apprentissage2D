@@ -106,7 +106,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 256
@@ -119,7 +119,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 256
@@ -132,7 +132,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 256
@@ -145,12 +145,51 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FloorWaterSquareCorners0
+      name: FloorWaterSquareCorners_0
       rect:
         serializedVersion: 2
         x: 0
@@ -158,24 +197,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -11, y: 15}
-        - {x: -11, y: -32}
-        - {x: 32, y: -32}
-        - {x: 32, y: 15}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 017e836514c33ee478650b6caafd433c
-      internalID: 21300000
+      spriteID: 6aa6faa017dede24587d3effbd67cafd
+      internalID: 339022661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorWaterSquareCorners1
+      name: FloorWaterSquareCorners_1
       rect:
         serializedVersion: 2
         x: 64
@@ -183,24 +218,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -32, y: 15}
-        - {x: -32, y: -32}
-        - {x: 32, y: -32}
-        - {x: 32, y: 15}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23a81905249509149aa33a17568d96a0
-      internalID: 21300002
+      spriteID: b85d4837959e0b34c86b19b3311caa0b
+      internalID: 969348153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorWaterSquareCorners2
+      name: FloorWaterSquareCorners_2
       rect:
         serializedVersion: 2
         x: 128
@@ -208,24 +239,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -32, y: 15}
-        - {x: -32, y: -32}
-        - {x: 14, y: -32}
-        - {x: 14, y: 15}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9be1fd59a9e8d245934a8513802877b
-      internalID: 21300004
+      spriteID: 2486e45b5fc2e6346a93c86b19367ae8
+      internalID: 163635728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorWaterSquareCorners3
+      name: FloorWaterSquareCorners_3
       rect:
         serializedVersion: 2
         x: 0
@@ -233,24 +260,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -11, y: 32}
-        - {x: -11, y: -32}
-        - {x: 32, y: -32}
-        - {x: 32, y: 32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17912ddde4dff4f49b1eb0513a951baf
-      internalID: 21300006
+      spriteID: f05a10ac8b1218748a94161a8402786c
+      internalID: -415370909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorWaterSquareCorners4
+      name: FloorWaterSquareCorners_4
       rect:
         serializedVersion: 2
         x: 64
@@ -258,24 +281,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -32, y: 32}
-        - {x: -32, y: -32}
-        - {x: 32, y: -32}
-        - {x: 32, y: 32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a97a1baa344e0c74392d054be39729f7
-      internalID: 21300008
+      spriteID: d3707508a79a7474cb69a8216f9b3736
+      internalID: -187386359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorWaterSquareCorners5
+      name: FloorWaterSquareCorners_5
       rect:
         serializedVersion: 2
         x: 128
@@ -283,24 +302,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -32, y: 32}
-        - {x: -32, y: -32}
-        - {x: 14, y: -32}
-        - {x: 14, y: 32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1effc8b09ba947d4eb9c1205ba8c9532
-      internalID: 21300010
+      spriteID: 3cc17fa97e27ad348a300966e352e65f
+      internalID: 1445577270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorWaterSquareCorners6
+      name: FloorWaterSquareCorners_6
       rect:
         serializedVersion: 2
         x: 0
@@ -308,24 +323,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -11, y: 32}
-        - {x: -11, y: -14}
-        - {x: 32, y: -14}
-        - {x: 32, y: 32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efb81bc3486e82541be1097d404ad2c5
-      internalID: 21300012
+      spriteID: 472501444072f7645b0ae7daa07ac32e
+      internalID: 1101018203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorWaterSquareCorners7
+      name: FloorWaterSquareCorners_7
       rect:
         serializedVersion: 2
         x: 64
@@ -333,24 +344,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -32, y: 32}
-        - {x: -32, y: -14}
-        - {x: 32, y: -14}
-        - {x: 32, y: 32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13ecf6bfd8a0c46498c4e0fbe1862cad
-      internalID: 21300014
+      spriteID: fbb7ded439661694ab2ef61e826e5dae
+      internalID: 1622265850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorWaterSquareCorners8
+      name: FloorWaterSquareCorners_8
       rect:
         serializedVersion: 2
         x: 128
@@ -358,18 +365,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -32, y: 32}
-        - {x: -32, y: -14}
-        - {x: 14, y: -14}
-        - {x: 14, y: 32}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27a045c315350f147acead89c3c5d1e8
-      internalID: 21300016
+      spriteID: 1addae2284776ce4ab02db7981a19531
+      internalID: 506592839
       vertices: []
       indices: 
       edges: []
@@ -385,15 +388,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FloorWaterSquareCorners0: 21300000
-      FloorWaterSquareCorners1: 21300002
-      FloorWaterSquareCorners2: 21300004
-      FloorWaterSquareCorners3: 21300006
-      FloorWaterSquareCorners4: 21300008
-      FloorWaterSquareCorners5: 21300010
-      FloorWaterSquareCorners6: 21300012
-      FloorWaterSquareCorners7: 21300014
-      FloorWaterSquareCorners8: 21300016
+      FloorWaterSquareCorners_0: 339022661
+      FloorWaterSquareCorners_1: 969348153
+      FloorWaterSquareCorners_2: 163635728
+      FloorWaterSquareCorners_3: -415370909
+      FloorWaterSquareCorners_4: -187386359
+      FloorWaterSquareCorners_5: 1445577270
+      FloorWaterSquareCorners_6: 1101018203
+      FloorWaterSquareCorners_7: 1622265850
+      FloorWaterSquareCorners_8: 506592839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
