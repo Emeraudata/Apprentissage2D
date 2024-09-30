@@ -228,6 +228,9 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     m_Flags: 0
+  speed: 3
+  maxHealth: 5
+  currentHealth: 1
 --- !u!50 &8225441015492643229
 Rigidbody2D:
   serializedVersion: 4
@@ -252,7 +255,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &6682936658839274723
