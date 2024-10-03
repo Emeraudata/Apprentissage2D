@@ -18,12 +18,17 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Vector2 moveDirection = new Vector2(1,0);
 
+    public GameObject projectilePrefab;
+    public InputAction launchAction;
+
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         MoveAction.Enable();
+        launchAction.Enable();
+        launchAction.performed += Launch;
         currentHealth = maxHealth;
     }
 
@@ -72,5 +77,14 @@ public class PlayerController : MonoBehaviour
 
     public bool CheckIfMaxHealth(){
         return health < maxHealth;
+    }
+
+    void Launch(InputAction.CallbackContext context)
+    {
+        Debug.Log("je suis dan sla fonction de lancement");
+        GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
+        Projectil projectile = projectileObject.GetComponent<Projectil>();
+        projectile.Launch(moveDirection, 300);
+        animator.SetTrigger("Launch");
     }
 }

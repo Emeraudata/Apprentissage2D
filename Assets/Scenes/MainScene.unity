@@ -10894,6 +10894,41 @@ PrefabInstance:
       propertyPath: currentHealth
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1977481316963275481, guid: 86bc8c3e6845e4a28a0029ad4861a1a9,
+        type: 3}
+      propertyPath: launchAction.m_Name
+      value: Launch
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977481316963275481, guid: 86bc8c3e6845e4a28a0029ad4861a1a9,
+        type: 3}
+      propertyPath: launchAction.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977481316963275481, guid: 86bc8c3e6845e4a28a0029ad4861a1a9,
+        type: 3}
+      propertyPath: launchAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 59097a65-1dc3-4371-bd1e-0c4f029ff7db
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977481316963275481, guid: 86bc8c3e6845e4a28a0029ad4861a1a9,
+        type: 3}
+      propertyPath: launchAction.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 59097a65-1dc3-4371-bd1e-0c4f029ff7db
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977481316963275481, guid: 86bc8c3e6845e4a28a0029ad4861a1a9,
+        type: 3}
+      propertyPath: launchAction.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977481316963275481, guid: 86bc8c3e6845e4a28a0029ad4861a1a9,
+        type: 3}
+      propertyPath: launchAction.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977481316963275481, guid: 86bc8c3e6845e4a28a0029ad4861a1a9,
+        type: 3}
+      propertyPath: launchAction.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Launch
+      objectReference: {fileID: 0}
     - target: {fileID: 6682936658839274723, guid: 86bc8c3e6845e4a28a0029ad4861a1a9,
         type: 3}
       propertyPath: m_Size.y
