@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public GameObject projectilePrefab;
     public InputAction launchAction;
 
+    public InputAction talkAction;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,9 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         MoveAction.Enable();
         launchAction.Enable();
+        talkAction.Enable();
         launchAction.performed += Launch;
+        talkAction.performed -= FindFriend;
         currentHealth = maxHealth;
     }
 
@@ -81,10 +85,18 @@ public class PlayerController : MonoBehaviour
 
     void Launch(InputAction.CallbackContext context)
     {
-        Debug.Log("je suis dan sla fonction de lancement");
         GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
         Projectil projectile = projectileObject.GetComponent<Projectil>();
         projectile.Launch(moveDirection, 300);
         animator.SetTrigger("Launch");
+    }
+
+    void FindFriend(InputAction.CallbackContext context)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(rigidbody2D.position + Vector2.up * 0.2f, moveDirection, 1.5f, LayerMask.GetMask("FroggyNPC"));
+        if(hit.collider != null)
+        {
+            Debug.Log($"Raycast has hit the object {hit.collider.gameObject}");
+        }
     }
 }

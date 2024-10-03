@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour
     int direction = 1;
     float verticalTimer;
     Animator animator;
+    bool agressive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,18 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!agressive)
+        {
+            return;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if(!agressive)
+        {
+            return;
+        }
         timer -= Time.deltaTime;
         verticalTimer -= Time.deltaTime;
         if(timer < 0)
@@ -32,20 +45,17 @@ public class EnemyController : MonoBehaviour
             direction = -direction;
             timer = changeTime;
         }
-        if(verticalTimer < 0)
-        {
-            vertical = !vertical;
-            verticalTimer = 3 * changeTime;
-        }
-    }
-
-    void FixedUpdate()
-    {
+        // if(verticalTimer < 0)
+        // {
+        //     vertical = !vertical;
+        //     verticalTimer = 3 * changeTime;
+        // }
         MoveEnemy();
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        Debug.Log("je suis entré dans quelque chose");
         PlayerController player = other.gameObject.GetComponent<PlayerController>();
         if(player != null)
         {
@@ -68,5 +78,12 @@ public class EnemyController : MonoBehaviour
             position.x = position.x + speed * Time.deltaTime * direction;
         }
         rigidbody2D.MovePosition(position);
+    }
+
+    public void Fix()
+    {
+        agressive = false;
+        rigidbody2D.simulated = false;
+        animator.SetTrigger("Fixed");
     }
 }
