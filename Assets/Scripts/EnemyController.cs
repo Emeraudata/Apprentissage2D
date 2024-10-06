@@ -55,7 +55,6 @@ public class EnemyController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("je suis entré dans quelque chose");
         PlayerController player = other.gameObject.GetComponent<PlayerController>();
         if(player != null)
         {

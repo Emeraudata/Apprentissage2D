@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         launchAction.Enable();
         talkAction.Enable();
         launchAction.performed += Launch;
-        talkAction.performed -= FindFriend;
+        talkAction.performed += FindFriend;
         currentHealth = maxHealth;
     }
 
@@ -93,10 +93,14 @@ public class PlayerController : MonoBehaviour
 
     void FindFriend(InputAction.CallbackContext context)
     {
-        RaycastHit2D hit = Physics2D.Raycast(rigidbody2D.position + Vector2.up * 0.2f, moveDirection, 1.5f, LayerMask.GetMask("FroggyNPC"));
+        RaycastHit2D hit = Physics2D.Raycast(rigidbody2D.position + Vector2.up * 0.2f, moveDirection, 1.5f, LayerMask.GetMask("NPC"));
         if(hit.collider != null)
         {
-            Debug.Log($"Raycast has hit the object {hit.collider.gameObject}");
+            NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
+            if(character != null)
+            {
+                UIHandler.instance.DisplayDialogue();
+            }
         }
     }
 }
