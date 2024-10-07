@@ -22,12 +22,16 @@ public class PlayerController : MonoBehaviour
     public InputAction launchAction;
 
     public InputAction talkAction;
+    AudioSource audioSource;
+    public AudioClip launchClip;
+    public AudioClip hitByEnemyClip;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         MoveAction.Enable();
         launchAction.Enable();
         talkAction.Enable();
@@ -88,6 +92,7 @@ public class PlayerController : MonoBehaviour
         GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
         Projectil projectile = projectileObject.GetComponent<Projectil>();
         projectile.Launch(moveDirection, 300);
+        PlaySound(launchClip);
         animator.SetTrigger("Launch");
     }
 
@@ -102,5 +107,15 @@ public class PlayerController : MonoBehaviour
                 UIHandler.instance.DisplayDialogue();
             }
         }
+    }
+
+    public void PlaySound(AudioClip audioClip)
+    {
+        audioSource.PlayOneShot(audioClip);
+    }
+
+    public void PlayHitSound()
+    {
+        audioSource.PlayOneShot(hitByEnemyClip);
     }
 }

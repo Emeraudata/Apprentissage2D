@@ -13,12 +13,14 @@ public class EnemyController : MonoBehaviour
     float verticalTimer;
     Animator animator;
     bool agressive = true;
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         timer = changeTime;
         verticalTimer = 3 * changeTime;
     }
@@ -59,6 +61,7 @@ public class EnemyController : MonoBehaviour
         if(player != null)
         {
             player.ChangeHealth(-1);
+            player.PlayHitSound();
         }
     }
 
@@ -84,5 +87,6 @@ public class EnemyController : MonoBehaviour
         agressive = false;
         rigidbody2D.simulated = false;
         animator.SetTrigger("Fixed");
+        audioSource.Stop();
     }
 }
